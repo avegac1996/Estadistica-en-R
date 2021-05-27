@@ -15,7 +15,7 @@ x=c(2,6,8,8,12,16,20,20,22,26)
 y=c(58,105,88,118,117,137,157,169,149,202)
 
 plot(x,y)
-#aplicación de la formula
+#aplicaciÃ³n de la formula
 
 #media de X y Y
 medx= mean(x)
@@ -52,10 +52,20 @@ SCR= STC-SCE
 
 #+1 perfectamete relacional positiva
 #-1 perfectamente relacionadas negativa
-#0 Sin relación 
+#0 Sin relaciÃ³n 
 
 r2=SCR/STC
 
 #coeficiente de correlacion muestral
 
 rxy=sign(b1)*sqrt(r2)
+
+#CALCULO DE N
+n=length(x)
+#ERROR CUADRATICO MEDIO
+ECM= SCE/(n-2)
+#error estandar de estimacion
+s= sqrt(ECM)
+
+
+
